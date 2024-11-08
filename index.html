@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #bac1c7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            background-color: #f1ebeb;
+            width: 320px;
+            overflow: hidden;
+         
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            border-bottom-left-radius: 85px; 
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            padding: 15px;
+            background-color: #f1ebeb;
+        }
+        .text button {
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        .achievement {
+            background-color: #be262b;
+            color: white;
+        }
+        .achievements:hover {
+            background-color: #2a8641;
+        }
+        .ranking {
+            background-color: #661dd4;
+            color: white;
+        }
+        .ranking:hover {
+            background-color: #2a8641;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="image">
+            <img src="images\img1.jpg" alt="Profile Image">
+        </div>
+        <div class="text">
+            <button class="achievement">
+                <img src="images\img.jpg" alt="Profile Image" width="25px">
+                32<br>Achievement Completed</button>
+            <button class="ranking">
+                <img src="images\images.jpg" alt="Profile Image" width="25px">
+                384 <br>
+                Ranking Points</button>
+        </div>
+    </div>
+</body>
+</html>
